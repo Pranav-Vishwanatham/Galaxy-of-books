@@ -1,0 +1,95 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+GET http://localhost:8080/PranavBookstoreOrder/api/categories
+Accept: application/json
+
+###
+# curl 'http://localhost:8080/PranavBookstoreOrder/api/orders'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: en-IN,en;q=0.9,te-IN;q=0.8,te;q=0.7,en-GB;q=0.6,en-US;q=0.5'
+#  -H 'Cache-Control: max-age=0'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'DNT: 1'
+#  -H 'Origin: http://localhost:5173'
+#  -H 'Referer: http://localhost:5173/'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-site'
+#  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "macOS"'
+#  --data-raw '{"cart":{"itemArray":[{"book":{"bookId":1005,"title":"The Rainbow Fish","author":"Marcus Pfister","price":633,"isPublic":false,"categoryId":1002},"quantity":1},{"book":{"bookId":1006,"title":"The Very Hungry Caterpillar","author":"Eric Carle","price":429,"isPublic":true,"categoryId":1002},"quantity":1}]},"customerForm":{"name":"Pranav Vishwanatham","address":"Anand Nagar colony","phone":"7799777141","email":"pranavvish09@gmail.com","ccNumber":"4111-1111-1111-1111","ccExpiryMonth":10,"ccExpiryYear":2025}}'
+#  --compressed
+POST http://localhost:8080/PranavBookstoreOrder/api/orders
+Accept: */*
+Accept-Language: en-IN,en;q=0.9,te-IN;q=0.8,te;q=0.7,en-GB;q=0.6,en-US;q=0.5
+Cache-Control: max-age=0
+Connection: keep-alive
+DNT: 1
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+sec-ch-ua: "Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1005,
+          "title": "The Rainbow Fish",
+          "author": "Marcus Pfister",
+          "price": 633,
+          "isPublic": false,
+          "categoryId": 1002
+        },
+        "quantity": 1
+      },
+      {
+        "book": {
+          "bookId": 1006,
+          "title": "The Very Hungry Caterpillar",
+          "author": "Eric Carle",
+          "price": 429,
+          "isPublic": true,
+          "categoryId": 1002
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Pranav Vishwanatham",
+    "address": "Anand Nagar colony",
+    "phone": "7799777141",
+    "email": "pranavvish09@gmail.com",
+    "ccNumber": "4111-1111-1111-1111",
+    "ccExpiryMonth": 10,
+    "ccExpiryYear": 2025
+  }
+}
+
+###
+
+
+
+
+
+
+
+
+
